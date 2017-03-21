@@ -1,0 +1,20 @@
+{
+  "name":"chabam-start-page",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A small local application to create an intelligent start page.",
+  "author": "Chabam",
+  "license": "GPLV2",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2"
+  }
+}
