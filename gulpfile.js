@@ -9,18 +9,18 @@ var jsVendors = [
 
 gulp.task("js-vendors", function(){
     return gulp.src(jsVendors)
-        .pipe(concat(projectName + ".js"))
+        .pipe(concat("vendors.js"))
         .pipe(gulp.dest("dist/vendors/"));
 });
 
 gulp.task("html", function(){
-    return gulp.src("Resources/html/**/*.html")
+    return gulp.src("Resources/html/*.html")
         .pipe(concat(projectName + ".html"))
-        .pipe(gulp.dest("dist/html/"));
+        .pipe(gulp.dest("dist/"));
 });
 
 gulp.task("css", function(){
-    return gulp.src("Resources/css/**/*.css")
+    return gulp.src("Resources/css/*.css")
         .pipe(concat(projectName + ".css"))
         .pipe(gulp.dest("dist/css/"));
 });
@@ -31,4 +31,4 @@ gulp.task("scripts", function(){
         .pipe(gulp.dest("dist/js/"));
 });
 
-gulp.task("default", ["html", "css", "scripts"]);
+gulp.task("default", ["js-vendors", "html", "css", "scripts"]);
