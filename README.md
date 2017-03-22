@@ -1,8 +1,3 @@
-# Start-Page
-A small local used to create a start page for your browser.
-
-To use:
-
-`npm install`
-
-`gulp default`
+# Web-Starter
+A simple collection of files to start a web project.
+Just cause i'm lazy...
