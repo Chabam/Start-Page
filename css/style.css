@@ -1,0 +1,219 @@
+* {
+    --fg-color : #ebdbb2;
+    --bg-color : #313131;
+    transition: all 0.3s ease;
+}
+
+@font-face {
+    font-family: Inconsolata;
+    src: url(../fonts/Inconsolata-Regular.ttf);
+}
+
+@font-face {
+    font-family: Terminus;
+    src: url(../fonts/Terminus-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inconsolata-Bold;
+    src: url(../fonts/Inconsolata-Bold.ttf);
+}
+
+@font-face {
+    font-family: Terminus-Bold;
+    src: url(../fonts/Terminus-Bold.ttf);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.container {
+    position: absolute;
+    top:25%;
+    width: 95%;
+    left: 2.5%;
+    color: var(--bg-color);
+    height: 50%;
+}
+
+
+#time {
+    display: none;
+}
+
+#date {
+    display: none;
+}
+
+.header {
+    font-family: Inconsolata-Bold;
+    width: 100%;
+    background-color: var(--fg-color);
+    position: relative;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.search-container {
+    width: 100%;
+    background-color: var(--fg-color);
+    position: relative;
+    margin-bottom: 5px;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.header h1 {
+    margin: 0;
+    padding: 5px;
+}
+
+#date {
+    font-size: 0.5em;
+    font-family: Terminus;
+    right:5px;
+    top: 5px;
+    position: absolute;
+}
+
+#time {
+    font-size: 0.5em;
+    font-family: Terminus-Bold;
+    right:5px;
+    bottom: 5px;
+    position: absolute;
+}
+
+.site-container {
+    width: 100%;
+    margin-bottom: 5px;
+    overflow: auto;
+}
+
+.site-list {
+    color: var(--bg-color);
+    background-color: var(--fg-color);
+    padding: 15px;
+    width : calc(100% - 30px);
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.site-list li {
+    display: block;
+    width: 100%;
+}
+
+.site-list li a {
+    padding:2px;
+    font-family: Terminus;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.site-list li a:hover {
+    color: var(--fg-color);
+    background-color: var(--bg-color);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.title {
+    font-family: Inconsolata-Bold;
+    font-style: italic;
+    font-size: 1.2em;
+    opacity: 0.3;
+}
+
+.site-list-container {
+    display: inline-block;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 75%;
+        left:12.5%;
+    }
+
+    #time {
+        display: block;
+    }
+
+    #date {
+        display: block;
+    }
+
+    .site-list-container {
+        width: calc(100% / 2);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 75%;
+        left:12.5%;
+    }
+
+    #time {
+        display: block;
+    }
+
+    #date {
+        display: block;
+    }
+
+    .site-list-container {
+        width: calc(100% / 3);
+
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 75%;
+        left:12.5%;
+    }
+
+    #time {
+        display: block;
+    }
+
+    #date {
+        display: block;
+    }
+    .site-list-container {
+        width: calc(100% / 4);
+
+    }
+}
+
+@media (min-width: 1366px) {
+    .container {
+        width: 50%;
+        left: 25%;
+    }
+
+    #time {
+        display: block;
+    }
+
+    #date {
+        display: block;
+    }
+
+    .site-list-container {
+        width: calc(100% / 5);
+    }
+}
